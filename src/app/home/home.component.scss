@@ -1,0 +1,104 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.list {
+  height: auto;
+  min-width: max-content;
+  flex-shrink: 0;
+}
+.list-item {
+  min-width: 0;
+  min-height: 0;
+}
+.avatar {
+  color: var(--igx-grays-800);
+  background-color: var(--igx-grays-400);
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+.image {
+  width: 139px;
+  height: 100px;
+  min-width: 0;
+  min-height: 0;
+  object-fit: cover;
+  margin: 20px;
+  flex-shrink: 0;
+}
+.text {
+  text-align: center;
+  white-space: pre-wrap;
+  min-width: min-content;
+  height: max-content;
+}
+.link {
+  margin: 20px;
+  min-width: min-content;
+  flex-shrink: 0;
+  height: max-content;
+}
+.icon_1 {
+  width: max-content;
+  height: max-content;
+}
+.absolute-layout {
+  position: relative;
+  width: 1456px;
+  min-height: 50px;
+  min-width: 50px;
+}
+.row-layout {
+  width: 1438px;
+  top: 1px;
+  left: 1px;
+  height: 136px;
+  background-color: var(--igx-secondary-100);
+  position: absolute;
+  align-items: stretch;
+  min-height: 50px;
+  min-width: 50px;
+}
+.row-layout_1 {
+  width: 1296px;
+  top: 232px;
+  left: 46px;
+  height: 264px;
+  position: absolute;
+  align-items: stretch;
+  min-height: 50px;
+  min-width: 50px;
+}
+.card {
+  width: 320px;
+  min-width: 320px;
+  height: max-content;
+  margin: 10px;
+  flex-shrink: 0;
+}
+.actions {
+  min-height: 40px;
+  min-width: 50px;
+}
+.content {
+  min-height: 50px;
+  min-width: 50px;
+}
+.dialog-window {
+  top: 429.1126279863481px;
+  left: 543.0716723549488px;
+  position: absolute;
+  min-width: 0;
+  min-height: 0;
+}
+.button {
+  height: max-content;
+  min-width: min-content;
+}
+.row {
+  display: flex;
+}

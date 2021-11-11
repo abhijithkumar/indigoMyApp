@@ -1,0 +1,42 @@
+<igx-list *ngIf="listVisible" class="list">
+  <igx-list-item class="list-item">
+    <igx-avatar icon="person" bgColor="var(--igx-grays-400)" [roundShape]="true" size="small" igxListThumbnail class="avatar"></igx-avatar>
+    <h4 igxListLineTitle>Title goes here</h4>
+    <p igxListLineSubTitle>Subtitle...</p>
+    <igx-icon font="material" [active]="true" igxListAction class="icon">star</igx-icon>
+  </igx-list-item>
+</igx-list>
+<div class="absolute-layout">
+  <div class="row-layout row">
+    <img src="/assets/Capture.PNG" class="image" />
+    <a href target="_blank" *ngIf="linkVisible" class="link">This is a link</a>
+  </div>
+  <igx-dialog message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="OK" [closeOnOutsideSelect]="true" [closeOnEscape]="true" (rightButtonSelect)="dialogWindow.toggle()" (leftButtonSelect)="dialogWindow.toggle()" #dialogWindow class="dialog-window">
+    <igx-dialog-title>Confirmation</igx-dialog-title>
+  </igx-dialog>
+  <div class="row-layout_1 row">
+    <igx-card type="outlined" *ngFor="let item of productsTable1" class="card">
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>{{ item.name }}</h3>
+        <h5 igxCardHeaderSubtitle>{{ item.description }}</h5>
+      </igx-card-header>
+      <igx-card-content class="content">
+        <p class="text">{{ item.price }}</p>
+      </igx-card-content>
+      <igx-card-actions class="actions">
+        <button igxButton="flat" [disabled]="false" class="button">
+          <span>Button</span>
+        </button>
+        <button igxButton="icon" type="icon" [disabled]="false">
+          <igx-icon class="icon_1">favorite</igx-icon>
+        </button>
+        <button igxButton="icon" type="icon" [disabled]="false">
+          <igx-icon class="icon_1">bookmark</igx-icon>
+        </button>
+        <button igxButton="icon" type="icon" [disabled]="false">
+          <igx-icon class="icon_1">share</igx-icon>
+        </button>
+      </igx-card-actions>
+    </igx-card>
+  </div>
+</div>
